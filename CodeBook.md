@@ -2,26 +2,26 @@
 This project reads from the UCI Human Activity Recognition Using Smartphones Data Set and generates a tidy data set. The file *run_analysis.R* contains the R code to accomplish this.
 
 #Instructions
-The script run_analysis.R must be in the same folder as the UCI data set, it assumes that the this data set is in the "UCI HAR Dataset" folder. This can be changed though by
-changing the UCI_dataset_home variable in the script.
+The script run_analysis.R must be in the same folder as the UCI data set, it assumes that this data set is in the "UCI HAR Dataset" folder. This can be changed though by
+changing the **UCI_dataset_home** variable in the script.
 
 The script reads the following file within the "UCI HAR Dataset" folder:
 * Train files
-** /train/subject_train.txt: Subject data
-** /train/X_train.txt: Processed data
-** /train/y_train.txt: Activity data
+ * /train/subject_train.txt: Subject data
+ * /train/X_train.txt: Processed data
+ * /train/y_train.txt: Activity data
 * Test files
-** /test/subject_test.txt: Subject data
-** /test/X_test.txt: Processed data
-** /test/y_test.txt: Activity data
+ * /test/subject_test.txt: Subject data
+ * /test/X_test.txt: Processed data
+ * /test/y_test.txt: Activity data
 * Metadata
-** features.txt: Features names and column numbers within the processed data files
-** activity_labels.txt: Descriptive names for recorded activities
+ * features.txt: Features names and column numbers within the processed data files
+ * activity_labels.txt: Descriptive names for recorded activities
 
 After running the run_analysis.R script it will generate a tidy_data_set.txt files with a summary of the data obtained from the above listed files.
 
 #Output: tidy_data_set.txt
-This file contains a table of the mean, by subject and then by activity, of the following measured variables:
+The tidy_data_set.txt uses descriptive names for all variables and activities. These names were extracted directly from the features.txt and activity_labels.txt files. The tidy_data_set.txt contains summarized data of the unified train and test data sets; it contains a table of the mean, by subject and then by activity, of the following measured variables:
 * tBodyAcc-mean()-X
 * tBodyAcc-mean()-Y
 * tBodyAcc-mean()-Z
