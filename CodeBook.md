@@ -18,10 +18,10 @@ The script reads the following file within the "UCI HAR Dataset" folder:
  * features.txt: Features names and column numbers within the processed data files
  * activity_labels.txt: Descriptive names for recorded activities
 
-After running the run_analysis.R script it will generate a tidy_data_set.txt files with a summary of the data obtained from the above listed files.
+After running the run_analysis.R script it will generate a tidy_data_set.txt file with a summary of the data obtained from the above listed files.
 
 #Output: tidy_data_set.txt
-The tidy_data_set.txt uses descriptive names for all variables and activities. These names were extracted directly from the features.txt and activity_labels.txt files. The tidy_data_set.txt contains summarized data of the unified train and test data sets; it contains a table of the mean, by subject and then by activity, of the following measured variables:
+The tidy_data_set.txt uses descriptive names for all variables and activities. These names were extracted directly from the features.txt and activity_labels.txt files. The tidy_data_set.txt contains summarized data of the unified train and test data sets; it contains a table of the mean, by subject and then by activity, of the following measured variables (all variables below are the mean and standard deviation of measurements obtained from raw data):
 * tBodyAcc-mean()-X
 * tBodyAcc-mean()-Y
 * tBodyAcc-mean()-Z
